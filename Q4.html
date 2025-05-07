@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quarter 4 Activities</title>
+  <style>
+    @font-face{ font-family: Daikon; src: url('Daikon-SemiBold.ttf'); }
+    body {
+      font-family: Daikon;
+      margin: 20px;
+      background-color: rgb(160, 192, 187);
+    }
+    #output, #contactsOutput {
+      margin-top: 20px;
+      white-space: pre;
+    }
+    input, button {
+      margin-top: 10px;
+      padding: 6px 10px;
+      font-family: Daikon;
+      border-radius: 3px;
+      border: 2px black;
+    }
+    button {
+      background-color: lightblue;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #add8e6;
+    }
+    button:active {
+      background-color: aliceblue;
+      scale: 1.02;
+      color: darkslategray;
+    }
+    button:hover, input:hover {
+      transition-duration: 300ms;
+      scale: 1.02;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>1. Number Shape Generator</h2>
+  <div id="output"></div>
+
+  <h2>2. Contact List Manager</h2>
+  <input type="text" id="nameInput" placeholder="Enter a name">
+  <button onclick="addContact()">Add</button>
+  <button onclick="removeContact()">Remove</button>
+  <div id="contactsOutput"></div>
+
+  <script src="Q4.js"></script>
+
+</body>
+</html>
